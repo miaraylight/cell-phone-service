@@ -4,7 +4,16 @@ public class CellPhone {
     private String serialNumber;
     private String model;
     private String carrier;
+    private String phoneNumber;
     private String owner;
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
 
     public String getSerialNumber() {
         return serialNumber;
