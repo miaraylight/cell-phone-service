@@ -48,6 +48,8 @@ public class CellPhone {
     }
 
     public String dial (String phoneNumber) {
-        return String.format("$s's phone is calling %s", this.owner, phoneNumber);
-    };
+        String message = String.format("%s's phone is calling %s", this.owner, phoneNumber);
+        return message;
+    }
+
 }
