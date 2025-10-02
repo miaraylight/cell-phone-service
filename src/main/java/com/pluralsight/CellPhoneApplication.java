@@ -7,43 +7,29 @@ public class CellPhoneApplication {
         Scanner scanner = new Scanner(System.in);
         CellPhone phone = new CellPhone();
 
-        System.out.println("What is the serial number?");
-        phone.setSerialNumber(scanner.nextLine());
-
-        System.out.println(" What model is the phone?");
-        phone.setModel(scanner.nextLine());
-
-        System.out.println("Who is the carrier?");
-        phone.setCarrier(scanner.nextLine());
-
-        System.out.println("What is the phone number?");
-        phone.setPhoneNumber(scanner.nextLine());
-
-        System.out.println("Who is the owner of the phone?");
-        phone.setOwner(scanner.nextLine());
-
-        CellPhone phone1 = new CellPhone();
-
-        System.out.println("What is the serial number?");
-        phone1.setSerialNumber(scanner.nextLine());
-
-        System.out.println(" What model is the phone?");
-        phone1.setModel(scanner.nextLine());
-
-        System.out.println("Who is the carrier?");
-        phone1.setCarrier(scanner.nextLine());
-
-        System.out.println("What is the phone number?");
-        phone1.setPhoneNumber(scanner.nextLine());
-
-        System.out.println("Who is the owner of the phone?");
-        phone1.setOwner(scanner.nextLine());
+//        System.out.println("What is the serial number?");
+//        phone.setSerialNumber(scanner.nextLine());
+//
+//        System.out.println(" What model is the phone?");
+//        phone.setModel(scanner.nextLine());
+//
+//        System.out.println("Who is the carrier?");
+//        phone.setCarrier(scanner.nextLine());
+//
+//        System.out.println("What is the phone number?");
+//        phone.setPhoneNumber(scanner.nextLine());
+//
+//        System.out.println("Who is the owner of the phone?");
+//        phone.setOwner(scanner.nextLine());
 
         scanner.close();
 
+        CellPhone myPhone = new CellPhone("1234", "iPhone", "Tmobile", "773-122-1111", "ME" );
+
+        display(myPhone);
         display(phone);
 
-        System.out.println(phone1.dial(phone.getPhoneNumber()));
+//        System.out.println(phone1.dial(phone.getPhoneNumber()));
 
     }
 
@@ -51,3 +37,4 @@ public class CellPhoneApplication {
         System.out.println(phone.getPhoneNumber());
     }
 }
+
