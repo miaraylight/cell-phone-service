@@ -62,4 +62,9 @@ public class CellPhone {
         return message;
     }
 
+    public String dial (CellPhone phone) {
+        String message = String.format("%s's phone is calling %s", this.owner, phone.getPhoneNumber());
+        return message;
+    }
+
 }

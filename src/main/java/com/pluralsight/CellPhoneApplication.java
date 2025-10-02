@@ -25,11 +25,13 @@ public class CellPhoneApplication {
         scanner.close();
 
         CellPhone myPhone = new CellPhone("1234", "iPhone", "Tmobile", "773-122-1111", "ME" );
+        CellPhone otherPhone = new CellPhone("1234", "iPhone", "Tmobile", "773-022-0099", "other" );
 
         display(myPhone);
-        display(phone);
+        display(otherPhone);
 
-//        System.out.println(phone1.dial(phone.getPhoneNumber()));
+        System.out.println(myPhone.dial(phone.getPhoneNumber()));
+        System.out.println(myPhone.dial(otherPhone));
 
     }
 
