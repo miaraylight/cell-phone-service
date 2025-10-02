@@ -24,6 +24,10 @@ public class CellPhoneApplication {
 
         scanner.close();
 
+        display(phone);
+    }
+
+    public static void display(CellPhone phone) {
         System.out.println(phone.getPhoneNumber());
     }
 }
